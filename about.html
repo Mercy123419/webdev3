@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - CountryFacts</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Basic Reset and Body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #007acc;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav .nav-links li {
+      position: relative;
+    }
+
+    nav .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    nav .nav-links a:hover,
+    nav .nav-links a.active {
+      background-color: #345f82;
+      border-radius: 5px;
+    }
+
+    /* Dropdown */
+    nav .nav-links .dropdown {
+      display: none;
+      position: absolute;
+      background-color: white;
+      top: 38px;
+      left: 0;
+      min-width: 180px;
+      z-index: 999;
+    }
+
+    nav .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li {
+      display: block;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+    }
+
+    /* Main Section */
+    .about-section {
+      padding: 120px 30px 60px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h1 {
+      font-size: 40px;
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 18px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      nav .nav-links .dropdown {
+        position: static;
+      }
+
+      nav .nav-links li:hover .dropdown {
+        display: none;
+      }
+
+      nav .nav-links li:focus-within .dropdown {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">CountryFacts</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#">Continents ▾</a>
+        <ul class="dropdown">
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+          <li><a href="north america.html">North America</a></li>
+          <li><a href="south america.html">South America</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="antartica.html">Antarctica</a></li>
+        </ul>
+      </li>
+      <li><a href="facts.html">Facts</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About CountryFacts</h1>
+    <p>
+      CountryFacts is your go-to website for learning fascinating details about countries all around the world.
+      Whether you're a student researching for school, a traveler seeking insights, or just someone who loves geography,
+      this site has something for you!
+    </p>
+    <p>
+      You'll find fun facts, population data, languages, and short histories of countries from every continent—
+      all neatly organized and easy to navigate.
+    </p>
+    <p>
+      This project was created by <strong>Mercy Abimaje</strong> to educate and inspire others through simple,
+      clean design and accurate information.
+    </p>
+    <p>
+      Explore, learn, and be amazed by the diversity of our world.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CountryFacts. Designed by Mercy Abimaje.</p>
+  </footer>
+
+</body>
+</html>

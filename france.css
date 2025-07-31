@@ -1,0 +1,136 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #003366;
+      padding-top: 70px;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #007acc;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffe4e1;
+      font-weight: 700;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .navbar .logo {
+      font-size: 1.8rem;
+      cursor: default;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links a {
+      color: #ffe4e1;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: #ffe4e1;
+      color: #007acc;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f0f8ff;
+      border: 1px solid #007acc;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      min-width: 160px;
+      z-index: 999;
+    }
+    .dropdown-menu li {
+      margin: 0;
+    }
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: #003366;
+      font-weight: 500;
+    }
+    .dropdown-menu a:hover {
+      background-color: #007acc;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      color: #007acc;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    
+    .intro-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+      text-align: left;
+      color: #003366;
+    }
+
+    
+    .france-image{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.france-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+   .country-list ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    
+
+    footer {
+  margin-top: 50px; 
+  padding: 20px 0;   
+  text-align: center;
+  background-color: #003366;  
+  color: white;                
+  font-size: 14px;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>South America - Country Facts</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      padding-top: 80px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #007acc;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .navbar li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      color: #333;
+      top: 60px;
+      min-width: 150px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      color: #333;
+    }
+
+    .dropdown a:hover {
+      background-color: #f3f3f3;
+    }
+
+    /* MAIN CONTENT */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .main-section {
+      text-align: left;
+    }
+
+    .main-section h1 {
+      font-size: 48px;
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+
+    .main-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .continent-image {
+      max-width: 100%;
+      height: 600px;
+      margin-bottom: 30px;
+    }
+
+    .country-list h2 {
+      font-size: 28px;
+      margin-top: 40px;
+      color: #007acc;
+    }
+
+    .country-list ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    footer {
+  margin-top: 50px; 
+  padding: 20px 0;   
+  text-align: center;
+  background-color: #003366;  
+  color: white;                
+  font-size: 14px;
+}
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .main-section h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="logo">CountryFacts</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li>
+        <a href="#">Continents</a>
+        <div class="dropdown">
+          <a href="africa.html">Africa</a>
+          <a href="asia.html">Asia</a>
+          <a href="europe.html">Europe</a>
+          <a href="north america.html">North America</a>
+          <a href="south america.html">South America</a>
+          <a href="australia.html">Australia</a>
+          <a href="antartica.html">Antarctica</a>
+        </div>
+      </li>
+      <li><a href="facts.html">Facts</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container main-section">
+    <h1>South America</h1>
+    <p>
+      South America is known for its stunning rainforests, vibrant cultures, and historical civilizations like the Incas. It is home to breathtaking natural features such as the Amazon River and Andes Mountains, and a diverse mix of languages and traditions.
+    </p>
+
+    <img src="s amer.jpg" alt="Map of South America" class="continent-image" />
+
+    <div class="country-list">
+      <h2>Countries in South America</h2>
+      <ul>
+        <li>Argentina</li>
+        <li>Bolivia</li>
+        <li>Brazil</li>
+        <li>Chile</li>
+        <li>Colombia</li>
+        <li>Ecuador</li>
+        <li>Guyana</li>
+        <li>Paraguay</li>
+        <li>Peru</li>
+        <li>Suriname</li>
+        <li>Uruguay</li>
+        <li>Venezuela</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+  <p>© 2025 CountryFacts. Designed by Mercy Abimaje.</p>
+</footer>
+</body>
+</html>

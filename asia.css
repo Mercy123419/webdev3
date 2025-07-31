@@ -1,0 +1,138 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #003366;
+      padding-top: 70px; /* to avoid content hiding behind fixed navbar */
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #007acc;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffe4e1;
+      font-weight: 700;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .navbar .logo {
+      font-size: 1.8rem;
+      cursor: default;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links a {
+      color: #ffe4e1;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: #ffe4e1;
+      color: #007acc;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f0f8ff;
+      border: 1px solid #007acc;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      min-width: 160px;
+      z-index: 999;
+    }
+    .dropdown-menu li {
+      margin: 0;
+    }
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: #003366;
+      font-weight: 500;
+    }
+    .dropdown-menu a:hover {
+      background-color: #007acc;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .left-section {
+      text-align: left;
+    }
+
+    .left-section h1 {
+      font-size: 48px;
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+
+    .left-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .asia-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .country-list h2 {
+      font-size: 28px;
+      margin-top: 40px;
+      color: #007acc;
+    }
+
+    .country-list ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    footer {
+  margin-top: 50px; 
+  padding: 20px 0;   
+  text-align: center;
+  background-color: #003366;  
+  color: white;                
+  font-size: 14px;
+}
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .left-section h1 {
+        font-size: 36px;
+      }
+      .asia-image {
+        max-width: 100%;
+      }
+    }
