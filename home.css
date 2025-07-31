@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff; 
+  color: #003366; 
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007acc; 
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffe4e1; 
+  cursor: default;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #ffe4e1;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #ffe4e1;
+  color: #007acc;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #f0f8ff;
+  border: 1px solid #007acc;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 160px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background-color: #007acc;
+  color: #fff;
+  border-radius: 6px;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.continents-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f0f8ff; 
+}
+
+.continents-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #007acc;
+}
+
+.continents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.continent-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.continent-card:hover {
+  transform: scale(1.1);
+}
+
+.continent-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 4px solid #007acc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  margin-bottom: 15px;
+}
+
+.continent-card span {
+  font-size: 1.2rem;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .continents-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .continent-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .continents-section h2 {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  margin-top: 50px;  
+  padding: 20px 0;    
+  text-align: center;
+  background-color: #003366;  
+  color: white;             
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+}
